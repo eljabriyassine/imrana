@@ -1102,6 +1102,36 @@ section.contact-us {
   position: relative;
 }
 
+section.contact-us .map-placeholder {
+  min-height: 420px;
+  margin-bottom: 24px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #e9efed;
+  color: #42504e;
+  text-align: center;
+}
+
+section.contact-us .map-placeholder i {
+  margin-bottom: 12px;
+  color: #248578;
+  font-size: 30px;
+}
+
+section.contact-us .map-placeholder h4 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+section.contact-us .map-placeholder p {
+  margin: 0;
+  color: #596764;
+}
+
 section.contact-us:after {
   position: absolute;
   content: '';
@@ -1121,6 +1151,10 @@ section.contact-us .contact-info {
   z-index: 5;
   position: relative;
   padding: 20px;
+}
+
+section.contact-us .map-placeholder + .row .contact-info {
+  margin-top: 0;
 }
 
 section.contact-us .contact-info .icon i {
@@ -1501,6 +1535,124 @@ section.our-team ul.nacc li p {
   margin: 0;
 }
 
+section.trainer-highlights {
+  margin-top: 70px;
+  padding: 64px 0;
+  background: #f1f5f3;
+}
+
+.trainer-intro h6 {
+  margin-bottom: 12px;
+  color: #987a3f;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.trainer-intro h3,
+.achievement-summary h3 {
+  margin-bottom: 12px;
+  color: #1f2e4a;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.trainer-intro > h4 {
+  margin-bottom: 14px;
+  color: #1f2e4a;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.trainer-intro .trainer-tagline {
+  margin-bottom: 18px;
+  color: #52625e;
+  font-size: 17px;
+}
+
+.trainer-intro > p:not(.trainer-tagline) {
+  line-height: 1.8;
+}
+
+.trainer-credentials {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #c7d4ce;
+}
+
+.trainer-credentials h4 {
+  margin-bottom: 14px;
+  color: #1f2e4a;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.trainer-credentials p {
+  margin-bottom: 14px;
+}
+
+.trainer-credentials a {
+  color: #24796e;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.achievement-summary {
+  padding-left: 28px;
+}
+
+.achievement-summary h3 {
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.achievement-subtitle {
+  margin-bottom: 24px;
+  color: #66716e;
+  text-align: center;
+}
+
+.achievement-card {
+  min-height: 172px;
+  margin-bottom: 16px;
+  padding: 22px 16px;
+  border: 1px solid #dce5e1;
+  border-radius: 6px;
+  background: #fff;
+  text-align: center;
+}
+
+.achievement-card > i {
+  margin-bottom: 8px;
+  color: #24796e;
+  font-size: 22px;
+}
+
+.achievement-card h4 {
+  color: #1f2e4a;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.achievement-card .band-score {
+  margin: 8px 0 0;
+  color: #987a3f;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.achievement-card .band-label {
+  color: #52625e;
+}
+
+.achievement-report-note {
+  margin-top: 4px;
+  color: #66716e;
+  font-size: 13px;
+  text-align: center;
+}
+
 section.our-office .left-info {
   margin-right: 0px;
   position: relative;
@@ -1563,6 +1715,76 @@ section.our-office #video .thumb .play-button a {
 
 section.our-office #video img {
   border-radius: 20px;
+}
+
+section.profile-approach {
+  background: #f3f6f4;
+  padding: 72px 0 32px;
+}
+
+section.profile-approach:after {
+  display: none;
+}
+
+section.profile-approach .left-info {
+  margin: 0;
+  padding: 0 28px 0 0;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+section.profile-approach .left-info .section-heading {
+  margin-bottom: 24px;
+}
+
+section.profile-approach .left-info p {
+  margin-bottom: 24px;
+}
+
+section.profile-approach .left-info ul li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+section.profile-approach .left-info ul li:before {
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #248578;
+  content: '';
+}
+
+section.profile-approach #video {
+  margin-left: 0;
+}
+
+section.profile-approach #video .thumb {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+section.profile-approach #video img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+section.profile-approach #video .play-button {
+  display: none;
+}
+
+section.profile-approach p.copyright,
+section.profile-approach p.copyright a {
+  color: #515862;
 }
 
 
@@ -1823,6 +2045,9 @@ body {
   section.contact-us .contact-info {
     margin-top: 15px;
   }
+  section.contact-us .map-placeholder {
+    min-height: 280px;
+  }
   section.contact-us #contact {
     margin-left: 0px;
   }
@@ -1836,9 +2061,16 @@ body {
   section.get-info .info-item {
     margin-top: 60px;
   }
+  .achievement-summary {
+    margin-top: 36px;
+    padding-left: 0;
+  }
   section.our-office #video {
     margin-left: 0px;
     margin-top: 30px;
+  }
+  section.profile-approach .left-info {
+    padding-right: 0;
   }
   section.featured-product .left-info .info-item,
   section.featured-product .right-info .info-item {
