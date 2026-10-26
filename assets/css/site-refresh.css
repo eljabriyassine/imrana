@@ -1,0 +1,575 @@
+/* Site refresh layered on TemplateMo EduWell */
+
+:root {
+  --ink: #1c1633;
+  --muted: #5d5673;
+  --line: rgba(28, 22, 51, 0.1);
+  --accent: #c45ec8;
+  --accent-deep: #9b3fa8;
+  --peach: #f4b38a;
+  --cream: #fff8f3;
+  --card: #ffffff;
+  --shadow: 0 18px 50px rgba(52, 24, 68, 0.1);
+  --radius: 22px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: "Outfit", "Open Sans", sans-serif;
+  background: #fff;
+  color: var(--ink);
+}
+
+body {
+  letter-spacing: 0.01em;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fraunces", "Open Sans", serif;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+::selection {
+  background: #ecd0ef;
+  color: var(--ink);
+}
+
+section {
+  margin-top: 90px;
+}
+
+.section-heading {
+  margin-bottom: 48px;
+}
+
+.section-heading h6 {
+  font-family: "Outfit", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  color: var(--accent-deep);
+}
+
+.section-heading h4 {
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.2;
+  font-weight: 650;
+  text-transform: none;
+}
+
+.section-heading h4 em,
+.main-banner .header-text h2 em {
+  font-style: italic;
+  font-weight: 650;
+  background: linear-gradient(135deg, #c45ec8, #f4b38a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-heading p {
+  margin-top: 18px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-button-gradient a,
+.white-button a,
+#contact button,
+.main-gradient-button {
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  border-radius: 999px;
+  padding: 14px 28px;
+  box-shadow: 0 10px 24px rgba(196, 94, 200, 0.22);
+}
+
+.main-button-gradient a:hover,
+.white-button a:hover {
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+.text-button a {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  color: var(--accent-deep);
+}
+
+/* Header */
+.header-area {
+  background-image: none;
+  background: transparent;
+  height: auto;
+}
+
+.header-area .main-nav {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-area .main-nav .logo {
+  float: none;
+  line-height: 1.1;
+  font-family: "Fraunces", serif;
+  font-size: 24px;
+  font-weight: 650;
+  letter-spacing: -0.03em;
+  text-transform: none;
+  color: #fff;
+}
+
+.header-area .main-nav .nav {
+  float: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header-area .main-nav .nav li {
+  padding: 0 10px;
+}
+
+.header-area .main-nav .nav li a {
+  height: auto;
+  line-height: 1;
+  padding: 10px 4px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.header-area .main-nav .nav li a.nav-cta {
+  margin-left: 8px;
+  padding: 11px 18px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--accent-deep) !important;
+  opacity: 1 !important;
+  font-weight: 650;
+}
+
+.header-area .main-nav .nav li a.nav-cta:hover,
+.header-area .main-nav .nav li a.nav-cta.active {
+  background: #fff7f2;
+  color: var(--ink) !important;
+  opacity: 1 !important;
+}
+
+.background-header,
+.header-area.header-sticky.background-header {
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 8px 30px rgba(28, 22, 51, 0.08) !important;
+  height: 76px !important;
+}
+
+.background-header .main-nav .logo,
+.background-header .main-nav .nav li a {
+  color: var(--ink);
+}
+
+.background-header .main-nav .nav li:hover a,
+.background-header .main-nav .nav li a.active,
+.header-area.header-sticky .nav li a.active {
+  color: var(--accent-deep) !important;
+  opacity: 1;
+}
+
+.background-header .main-nav .nav li a.nav-cta,
+.background-header .main-nav .nav li a.nav-cta.active {
+  background: linear-gradient(-145deg, #c45ec8 0%, #f4b38a 100%);
+  color: #fff !important;
+}
+
+.background-header .main-nav .menu-trigger span,
+.background-header .main-nav .menu-trigger span:before,
+.background-header .main-nav .menu-trigger span:after {
+  background-color: var(--ink);
+}
+
+/* Hero */
+.main-banner {
+  padding: 150px 0 70px;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(196, 94, 200, 0.18), transparent 32%),
+    radial-gradient(circle at 88% 8%, rgba(244, 179, 138, 0.28), transparent 34%),
+    linear-gradient(180deg, #f8e9f4 0%, #fff 58%);
+}
+
+.main-banner .header-text::after,
+.main-banner .right-image::after {
+  display: none;
+}
+
+.main-banner .header-text h6 {
+  font-family: "Outfit", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  font-weight: 650;
+}
+
+.main-banner .header-text h2 {
+  margin: 16px 0 20px;
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.12;
+  font-weight: 650;
+}
+
+.main-banner .header-text p {
+  max-width: 520px;
+  margin-bottom: 28px;
+  font-size: 17px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.hero-actions .text-button a {
+  text-decoration: none !important;
+  padding: 14px 8px;
+}
+
+.hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.hero-pills span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.main-banner .right-image {
+  margin-left: 40px;
+}
+
+.main-banner .right-image img {
+  filter: drop-shadow(0 24px 40px rgba(155, 63, 168, 0.18));
+}
+
+/* Trainer / achievements */
+section.trainer-highlights {
+  margin-top: 20px;
+  padding: 72px 0;
+  background: var(--cream);
+  border-radius: 0;
+}
+
+.trainer-intro h6 {
+  font-family: "Outfit", sans-serif;
+  letter-spacing: 0.16em;
+  color: var(--accent-deep);
+}
+
+.trainer-intro h3,
+.achievement-summary h3 {
+  font-size: 34px;
+  font-weight: 650;
+  color: var(--ink);
+}
+
+.trainer-intro > h4,
+.trainer-intro .trainer-tagline {
+  color: var(--muted);
+}
+
+.trainer-credentials {
+  border-top-color: var(--line);
+}
+
+.trainer-credentials h4,
+.trainer-credentials a {
+  color: var(--accent-deep);
+}
+
+.achievement-card {
+  min-height: 200px;
+  padding: 28px 20px;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.achievement-card > i {
+  color: var(--accent);
+}
+
+.achievement-card .band-score {
+  color: var(--accent-deep);
+  font-family: "Fraunces", serif;
+  font-size: 48px;
+}
+
+.stats-bar {
+  margin-top: 10px;
+  padding: 28px;
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.stats-bar .stat {
+  text-align: center;
+  padding: 8px;
+}
+
+.stats-bar .stat strong {
+  display: block;
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  color: var(--ink);
+}
+
+.stats-bar .stat span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Services as a grid */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.service-grid .service-item {
+  height: 100%;
+  padding: 32px 24px;
+  border-radius: var(--radius);
+  background: #fff;
+  border: 1px solid var(--line);
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-grid .service-item:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+.service-grid .icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 16px;
+  display: grid;
+  place-items: center;
+}
+
+.service-grid h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 650;
+}
+
+.services .item {
+  border-radius: var(--radius);
+}
+
+/* Courses / CTA / reviews */
+section.our-courses .naccs .menu div {
+  border-radius: 16px !important;
+  font-family: "Outfit", sans-serif;
+  font-weight: 650;
+}
+
+section.simple-cta {
+  border-radius: 36px;
+  margin-left: 24px;
+  margin-right: 24px;
+  width: auto;
+  padding: 90px 0;
+}
+
+section.simple-cta h4 {
+  font-size: clamp(28px, 4vw, 46px);
+  line-height: 1.15;
+  font-weight: 650;
+}
+
+.testimonials .item {
+  border-radius: var(--radius);
+  padding: 36px;
+  box-shadow: var(--shadow);
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.review-card {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 28px;
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.review-card p {
+  font-size: 16px;
+  font-style: italic;
+  color: var(--ink);
+}
+
+.review-card h4 {
+  margin-top: 18px;
+  font-size: 16px;
+}
+
+.review-card span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+section.contact-us {
+  background: linear-gradient(180deg, #fff 0%, #f8eef7 100%);
+  padding: 80px 0 40px;
+}
+
+.site-footer {
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.site-footer a {
+  color: var(--accent-deep);
+}
+
+/* Inner pages */
+section.page-heading {
+  margin-top: 0;
+  padding: 150px 0 40px;
+  background:
+    radial-gradient(circle at 80% 0%, rgba(244, 179, 138, 0.28), transparent 36%),
+    linear-gradient(180deg, #f8e9f4 0%, #fff 80%);
+}
+
+section.page-heading .header-text {
+  border-bottom: 0;
+  padding-bottom: 20px;
+}
+
+section.page-heading .header-text h1 {
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 650;
+}
+
+section.get-info .info-item,
+section.more-info .count-area-content .count-title,
+section.more-info .count-area-content .count-digit {
+  border-radius: 20px;
+}
+
+section.contact-us #contact {
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 1200px) {
+  .header-area {
+    background: linear-gradient(-145deg, #c45ec8 0%, #f4b38a 100%) !important;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .main-banner .header-text p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions,
+  .hero-pills {
+    justify-content: center;
+  }
+
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  section.simple-cta {
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-area {
+    background: #fff !important;
+    height: auto;
+    text-align: left;
+  }
+
+  .header-area .main-nav .logo {
+    color: var(--ink);
+    line-height: 84px;
+  }
+
+  .header-area .main-nav .nav {
+    display: none;
+    background: #fff;
+    margin-top: 0;
+  }
+
+  .header-area .main-nav .nav li a,
+  .header-area .main-nav .nav li a.nav-cta {
+    color: var(--ink) !important;
+    background: transparent;
+    border-radius: 0;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
