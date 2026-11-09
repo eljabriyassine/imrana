@@ -1,78 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Reviews | Imrana Rafat</title>
-    <meta name="description" content="Share your experience learning English with Imrana Rafat.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta
+      name="description"
+      content="Share your experience learning English with Imrana Rafat."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/imrana.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/imrana.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="wrap"><a class="logo" href="index.html"><img src="assets/img/logo-ir.svg" alt="" width="34"
-                    height="34">Imrana Rafat</a>
-            <nav aria-label="Main">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About &amp; Qualifications</a></li>
-                    <li><a href="our-services.html" class=on aria-current=page>Reviews</a></li>
-                    <li><a href="contact-us.html">Contact</a></li>
-                </ul>
-            </nav><button class="burger" aria-label="Menu">Menu</button>
-        </div>
+      <div class="wrap">
+        <a class="logo" href="index.html"
+          ><img
+            src="assets/img/logo-ir.svg"
+            alt=""
+            width="34"
+            height="34"
+          />Imrana Rafat</a
+        >
+        <nav aria-label="Main">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About &amp; Qualifications</a></li>
+            <li>
+              <a href="our-services.html" class="on" aria-current="page"
+                >Reviews</a
+              >
+            </li>
+            <li><a href="contact-us.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="burger" aria-label="Menu">Menu</button>
+      </div>
     </header>
     <main>
-        <section class="pagehead">
-            <div class="wrap">
-                <h1>Learner Reviews</h1>
-                <p>Read and share experiences from English learners.</p>
+      <section class="reviews-hero">
+        <div class="wrap reviews-hero-inner">
+          <div>
+            <p class="eyebrow">Student success stories</p>
+            <h1>IELTS results with confidence.</h1>
+          </div>
+          <p class="intro-copy">
+            Students trust Imrana for clear teaching, personal guidance, and a
+            practical strategy for every part of the IELTS exam.
+          </p>
+        </div>
+      </section>
+
+      <section class="reviews-section">
+        <div class="wrap review-stack" aria-live="polite">
+          <article class="review-card">
+            <button
+              type="button"
+              class="report review-cert-visual"
+              data-full="assets/img/ielts-academic.jpg"
+              data-alt="IELTS Academic certificate for Yasmine"
+              aria-label="Open IELTS Academic certificate"
+            >
+              <img
+                src="assets/img/el-gaundafi-yasmine.jpg"
+                alt="IELTS Academic certificate for Yasmine"
+              />
+            </button>
+
+            <div class="review-body">
+              <div class="review-topbar">
+                <span class="review-name">Yasmine</span>
+                <span class="review-rating" aria-label="5 out of 5 stars">★★★★★</span>
+              </div>
+              <span>
+                I had an excellent experience learning with Madame Imrana! She is
+                an amazing IELTS teacher: patient, supportive, knowledgeable, and
+                genuinely dedicated to helping her students succeed. She explains
+                everything clearly, provides helpful guidance, and always makes
+                sure you feel confident and motivated throughout the learning
+                process. Her teaching methods really helped me improve my skills
+                and prepare for the IELTS exam. I'm truly grateful for her
+                support and would highly recommend her to anyone looking for an
+                outstanding IELTS teacher. Thank you, Madame Imrana, for
+                everything!
+              </span>
             </div>
-        </section>
-        <section>
-            <div class="wrap review-layout">
-                <div class="review-form-panel">
-                    <h2>Share your review</h2>
-                    <p>Your feedback can help other learners understand what lessons are like.</p>
-                    <form id="review-form">
-                        <label for="review-name">Your name</label>
-                        <input id="review-name" name="name" type="text" maxlength="60" autocomplete="name" required>
-                        <label for="review-rating">Your rating</label>
-                        <select id="review-rating" name="rating" required>
-                            <option value="">Choose a rating</option>
-                            <option value="5">5 - Excellent</option>
-                            <option value="4">4 - Very good</option>
-                            <option value="3">3 - Good</option>
-                            <option value="2">2 - Fair</option>
-                            <option value="1">1 - Poor</option>
-                        </select>
-                        <label for="review-message">Your review</label>
-                        <textarea id="review-message" name="message" maxlength="1200" required></textarea>
-                        <button class="btn" type="submit">Post review</button>
-                        <p class="review-status" id="review-status" role="status" aria-live="polite"></p>
-                    </form>
-                    <p class="review-disclosure">Reviews are saved in this browser only. A shared review service is
-                        needed for submissions to appear to every visitor.</p>
-                </div>
-                <div class="review-feed">
-                    <h2>Recent reviews</h2>
-                    <div id="review-list" class="review-list" aria-live="polite"></div>
-                </div>
+          </article>
+
+          <article class="review-card">
+            <button
+              type="button"
+              class="report review-cert-visual"
+              data-full="assets/img/ielts-general-training.jpg"
+              data-alt="IELTS General Training certificate for Anass"
+              aria-label="Open IELTS General Training certificate"
+            >
+              <img
+                src="assets/img/talla-anass.jpg"
+                alt="IELTS General Training certificate for Anass"
+              />
+            </button>
+
+            <div class="review-body">
+              <div class="review-topbar">
+                <span class="review-name">Anass</span>
+                <span class="review-rating" aria-label="5 out of 5 stars">★★★★★</span>
+              </div>
+              <span>
+                Imrana is an excellent teacher. She really helped me improve my
+                English across all areas, and I genuinely enjoyed learning with
+                her. I highly recommend her to anyone preparing for the IELTS
+                exam or simply looking to improve their English skills!
+              </span>
             </div>
-        </section>
+          </article>
+
+          <article class="review-card">
+            <button
+              type="button"
+              class="report review-cert-visual"
+              data-full="assets/img/ielts-general-training.jpg"
+              data-alt="IELTS General Training certificate for Sofia"
+              aria-label="Open IELTS General Training certificate"
+            >
+              <img
+                src="assets/img/laada-sofia.jpg"
+                alt="IELTS General Training certificate for Sofia"
+              />
+            </button>
+
+            <div class="review-body">
+              <div class="review-topbar">
+                <span class="review-name">Sofia</span>
+                <span class="review-rating" aria-label="5 out of 5 stars">★★★★★</span>
+              </div>
+              <span>
+                Taking an IELTS course with Mrs Rafat has completely transformed
+                the way I prepare for the exam. What makes her such a great
+                teacher is that she doesn't just hand you endless practice tests;
+                she actually gives you specific, practical tips for all four
+                skills.
+              </span>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="wrap"><span>© Imrana Rafat · IELTS Trainer &amp; English Language Educator</span><span>Design
-                adapted from <a href="https://templatemo.com" rel="sponsored">TemplateMo</a></span></div>
-    </footer><a class="sticky-cta" href="index.html#results">See IELTS results</a>
-    <dialog id="lb"><button>Close</button><img src="" alt=""></dialog>
+      <div class="wrap">
+        <span
+          >© Imrana Rafat · IELTS Trainer &amp; English Language Educator</span
+        >
+      </div>
+    </footer>
+    <a class="sticky-cta" href="index.html#results">See IELTS results</a>
+    <dialog id="lb"><button>Close</button><img src="" alt="" /></dialog>
     <script src="assets/js/imrana.js"></script>
-</body>
-
+  </body>
 </html>
